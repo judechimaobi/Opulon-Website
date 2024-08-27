@@ -2,7 +2,7 @@ import * as images from "../../images"
 const Header = ()=>{
     return(
         <>
-            <div className="flex justify-between items-center w-full bg-[#09090B] p-5">
+            <div className="flex justify-between items-center w-full bg-[#09090B] py-5 px-20">
                 <img src={images.opulon} alt="logo" />
                 <div className="flex w-auto items-center  text-sm text-[#fff]">
                     <p>White paper</p>
