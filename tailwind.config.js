@@ -5,8 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
     extend: {
-
+      fontFamily: {
+        sans1: "Azonix",
+        sans2: "Neuropolitical"
+      },
     },
   },
   plugins: [],

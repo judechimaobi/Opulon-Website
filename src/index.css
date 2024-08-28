@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Neuropolitical";
+    src: url("../public/fonts/neuropolitical.otf") format("opentype");
+}
+@font-face {
+    font-family: "Azonix";
+    src: url("../public/fonts/Azonix.otf") format("opentype");
+}

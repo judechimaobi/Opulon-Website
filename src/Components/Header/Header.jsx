@@ -6,7 +6,7 @@ const Header = ()=>{
                 <img src={images.opulon} alt="logo" />
                 <div className="flex w-auto items-center  text-sm text-[#fff]">
                     <p>White paper</p>
-                    <p className="flex justify-center  w-[200px] ml-10 rounded-full border-2 border-[#702A90] p-5">Join the Adventure</p>
+                    <p className="flex justify-center font-sans2   ml-10 rounded-full border-2 border-[#702A90] p-5">Join the Adventure</p>
                 </div>
             </div>
         </>
