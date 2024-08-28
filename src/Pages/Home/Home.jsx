@@ -147,8 +147,10 @@ const Home = ()=>{
                         <img src={images.Frame48} />
                     </div>
                 </div>
-
                 {/* create end */}
+                {/* how it works start */}
+                <div className="bg-[url('/src/assets/works.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain"></div>
+                {/* how it works end */}
             </div>
         </>
     )
