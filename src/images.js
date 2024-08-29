@@ -11,6 +11,13 @@ import simpleicons from "./assets/simple-icons.png";
 import Frame46 from "./assets/Frame46.png";
 import Frame47 from "./assets/Frame47.png";
 import Frame48 from "./assets/Frame48.png";
+
+import community from "./assets/community.png";
+import crypto from "./assets/crypto.png";
+import play from "./assets/play.png";
+import nft from "./assets/nft.png";
+import ude from "./assets/ude.png";
+import chi from "./assets/chi.png";
 export {
     opulon,
     output,
@@ -24,5 +31,11 @@ export {
     simpleicons,
     Frame46,
     Frame47,
-    Frame48
+    Frame48,
+    community,
+    crypto,
+    play,
+    nft,
+    ude,
+    chi
 }

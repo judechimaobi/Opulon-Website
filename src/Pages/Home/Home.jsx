@@ -1,7 +1,42 @@
 /* eslint-disable react/no-unescaped-entities */
 import { IoPlayCircleOutline } from "react-icons/io5";
 import * as images from "../../images";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
+const team = [
+    {
+        img: images.ude,
+        name: "Jude Chimaobi",
+        position: "Project Founder"
+    },  
+    {
+        img: images.chi,
+        name: "Jude Chimaobi",
+        position: "Project Founder"
+    }, 
+    {
+        img: images.ude,
+        name: "Jude Chimaobi",
+        position: "Project Founder"
+    }, 
+    {
+        img: images.ude,
+        name: "Jude Chimaobi",
+        position: "Project Founder"
+    }, 
+    {
+        img: images.chi,
+        name: "Jude Chimaobi",
+        position: "Project Founder"
+    }, 
+    {
+        img: images.ude,
+        name: "Jude Chimaobi",
+        position: "Project Founder"
+    },   
+    
+]
 const features = [
     {
         img: images.arcticons,
@@ -151,6 +186,89 @@ const Home = ()=>{
                 {/* how it works start */}
                 <div className="bg-[url('/src/assets/works.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain"></div>
                 {/* how it works end */}
+                {/* case start */}
+                <div className="flex flex-col justify-center items-center bg-[url('/src/assets/case.jpeg')] w-full h-[500px] bg-center bg-no-repeat bg-cover">
+                    <p className="w-[200px] h-[40px] font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] font-normal text-2xl">
+                        Use Cases
+                    </p>
+                   <div className="flex justify-between">
+                        <div className="flex justify-between items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] h-[150px] rounded-md">
+                            <div className="flex flex-col w-[243px] p-4">
+                                <p className="font-sans1 text-sm">Community Building</p>
+                                <p className="font-sans2 text-[#242424] text-xs">Host meetings, events, and more in a virtual space where every user is real.</p>
+                            </div>
+                            <img src={images.community} className="h-full" />
+                        </div>
+                        <div className="flex justify-between ml-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] h-[150px] rounded-md">
+                            <div className="flex flex-col w-[243px] p-4">
+                                <p className="font-sans1 text-sm">Play-to-Earn Games</p>
+                                <p className="font-sans2 text-[#242424] text-xs">
+                                    Participate in competitive quests where you can earn SOL and other rewards.
+                                </p>
+                            </div>
+                            <img src={images.play} className="h-full" />
+                        </div>
+                    </div>
+                    <div className="flex justify-between mt-3">    
+                        <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] h-[150px] rounded-md">
+                            <div className="flex flex-col w-[243px] p-4">
+                                <p className="font-sans1 text-sm">Crypto Real Estate</p>
+                                <p className="font-sans2 text-[#242424] text-xs">
+                                    Buy and sell virtual properties within Opulon—buildings, meeting rooms, and more.
+                                </p>
+                            </div>
+                            <img src={images.crypto} className="h-full" />
+                        </div>
+                        <div className="flex justify-between items-end ml-3  bg-gradient-to-r from-[#0073FF] to-transparent w-[500px] h-[150px] rounded-md">
+                            <div className="flex flex-col w-[243px] p-4">
+                                <p className="font-sans1 text-sm">NFT Marketplace</p>
+                                <p className="font-sans2 text-[#242424] text-xs">
+                                    Trade unique avatars, accessories, and other digital assets within our NFT marketplace.
+                                </p>
+                            </div>
+                            <img src={images.nft} className="h-full" />
+                        </div>
+                        
+                    </div> 
+                </div>
+                {/* case end */}
+                {/* team start */}
+                <div className="flex w-full h-auto bg-[url('/src/assets/team.jpeg')] bg-center bg-cover bg-no-repeat">
+                    <div className="flex flex-col  py-10 items-center w-full h-full bg-gradient-to-r from-[#000] to-[#000] opacity-70">
+                        <p className="w-[233px] h-[40px] font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] font-normal text-2xl">
+                            Meet the Team
+                        </p>
+                        <p className="text-[#FFFFFF] font-sans2 ">
+                            Our team brings together experts in blockchain, virtual reality, 
+                        </p>
+                        <p className="text-[#FFFFFF] font-sans2 ">
+                            game design, and community building."A
+                        </p>
+                        <div className="grid grid-cols-3 gap-4 mt-16">
+                            {
+                                team.map(data=>(
+                                    <>
+                                        <div className="flex flex-col">
+                                            <img src={data.img} />
+                                            <div className="flex justify-between items-center my-3">
+                                                <div className="flex flex-col">
+                                                    <p className="text-sm font-sans2 text-[#fff]">{data.name}</p>
+                                                    <p className="text-xs text-[#FB4C00] font-sans2">{data.position}</p>
+                                                </div>
+                                                <div className="flex">
+                                                    <p className="text-[#fff] text-2xl"><FaXTwitter /></p>
+                                                    <p className="text-[#fff] text-2xl ml-3"><FaLinkedin /></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div>
+                {/* team end */}
+
             </div>
         </>
     )
