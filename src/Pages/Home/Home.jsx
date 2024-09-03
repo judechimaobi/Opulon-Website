@@ -67,9 +67,9 @@ const features = [
 const Home = ()=>{
     return(
         <>
-            <div className="flex flex-col px-20">
+            <div className="flex flex-col">
                 {/* banner start */}
-                <div className="flex items-center">
+                <div className="flex items-center justify-between px-20">
                     <div className="flex flex-col">
                         <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#702A90] w-[650px] font-normal text-5xl">
                             Welcome to Opulon:
@@ -92,7 +92,7 @@ const Home = ()=>{
                 </div>
                 {/* banner ends */}
                 {/* what is opulon start */}
-                <div className="flex justify-between my-16">
+                <div className="flex justify-between my-16 px-20">
                     <div className="flex w-1/2">
                         <img src={images.Frame55} />
                         <div className="flex items-center flex-col ml-5">
@@ -130,7 +130,7 @@ const Home = ()=>{
                 {/* what is opulon ends */}
                 {/* why solana start */}
                 <div className="flex items-center justify-center bg-[url('/src/assets/Vector1.png')] h-[584px] bg-center bg-contain bg-no-repeat">
-                    <div className="flex justify-between w-3/4">
+                    <div className="flex justify-between items-center w-3/4">
                         <div className="flex flex-col">
                             <p className="text-xl font-sans1 text-[#fff]">Why Solana blockchain?</p>
                             <p className="text-lg text-[#FB4C00] my-5">Optimal Performance</p>
@@ -145,18 +145,18 @@ const Home = ()=>{
                 </div>
                 {/* why solana ends */}
                 {/* features start */}
-                <div className="flex flex-col">
+                <div className="flex justify-center flex-col px-20">
                     <p className="flex justify-center w-[124px] text-center text-[#fff] font-sans2 rounded-md border-2 border-[#702A90] p-5">
                         opulon
                     </p>
                     <p className="font-sans1 my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                         Key Features of opulon
                     </p>
-                    <div className="flex w-full h-auto flex-wrap mt-5">
+                    <div className="flex flex-wrap h-auto  border-2 border-red-500 flex-wrap mt-5">
                         {
                             features.map((data, i)=>(
                                 <>
-                                    <div className={ (i === 1 || i === 4) ? "mx-20 mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]" : "mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
+                                    <div className={ (i === 1 || i === 4) ? "mx-20 mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]" : " mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
                                         <img src={data.img} className="w-[24px] h-[24px]" />
                                         <p className="text-base my-7">{data.title}</p>
                                         <p className="text-sm">
