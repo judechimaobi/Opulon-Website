@@ -12,28 +12,28 @@ const team = [
     },  
     {
         img: images.chi,
-        name: "Jude Chimaobi",
-        position: "Project Founder"
+        name: "Chineye",
+        position: "Product/project manager"
     }, 
     {
-        img: images.ude,
-        name: "Jude Chimaobi",
-        position: "Project Founder"
+        img: images.bello,
+        name: "Bello",
+        position: "Web Dev"
     }, 
     {
-        img: images.ude,
-        name: "Jude Chimaobi",
-        position: "Project Founder"
+        img: images.Joshua,
+        name: "Joshua",
+        position: "Solana Dev"
     }, 
     {
-        img: images.chi,
-        name: "Jude Chimaobi",
-        position: "Project Founder"
+        img: images.dan,
+        name: "Dan",
+        position: "Social Media Manager"
     }, 
     {
-        img: images.ude,
-        name: "Jude Chimaobi",
-        position: "Project Founder"
+        img: images.chuks,
+        name: "Chuks",
+        position: "UI/UX Designer"
     },   
     
 ]
@@ -69,14 +69,14 @@ const Home = ()=>{
         <>
             <div className="flex flex-col">
                 {/* banner start */}
-                <div className="flex items-center justify-between px-20">
+                <div className="flex items-center justify-between px-20 sm:px-5 sm:w-fit">
                     <div className="flex flex-col">
-                        <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#702A90] w-[650px] font-normal text-5xl">
+                        <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#702A90] w-[650px] sm:w-[300px] font-normal text-5xl sm:text-lg">
                             Welcome to Opulon:
                             An Immersive Virtual
                             World Built on Solana
                         </p>
-                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px]">
+                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px] sm:w-[300px]">
                             Trade, Play, and Connect in a Seamless Crypto Ecosystem
                         </p>
                         <div className="flex font-sans2 text-[#fff] w-[500px] items-center">
@@ -86,7 +86,7 @@ const Home = ()=>{
                             <p className="flex ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
                         </div>
                     </div>
-                    <div className="bg-[url('/src/assets/output.png')] w-[500px] h-[703px] bg-center bg-cover">
+                    <div className="bg-[url('/src/assets/output.png')] w-[500px] h-[703px] bg-center bg-cover sm:hidden">
                         
                     </div>
                 </div>
@@ -152,7 +152,7 @@ const Home = ()=>{
                     <p className="font-sans1 my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                         Key Features of opulon
                     </p>
-                    <div className="flex flex-wrap h-auto  border-2 border-red-500 flex-wrap mt-5">
+                    <div className="flex flex-wrap h-auto w-full flex-wrap mt-5">
                         {
                             features.map((data, i)=>(
                                 <>
@@ -233,8 +233,8 @@ const Home = ()=>{
                 </div>
                 {/* case end */}
                 {/* team start */}
-                <div className="flex w-full h-auto bg-[url('/src/assets/team.jpeg')] bg-center bg-cover bg-no-repeat">
-                    <div className="flex flex-col  py-10 items-center w-full h-full bg-gradient-to-r from-[#000] to-[#000] opacity-70">
+                <div className="flex w-full h-auto bg-[url('/src/assets/team.jpeg')] bg-center bg-cover bg-no-repeat relative">
+                    <div className="flex flex-col  py-10 items-center w-full h-full bg-gradient-to-r from-[#000] to-[#000] opacity-97">
                         <p className="w-[233px] h-[40px] font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] font-normal text-2xl">
                             Meet the Team
                         </p>
@@ -244,12 +244,12 @@ const Home = ()=>{
                         <p className="text-[#FFFFFF] font-sans2 ">
                             game design, and community building."A
                         </p>
-                        <div className="grid grid-cols-3 gap-4 mt-16">
+                        <div className="grid grid-cols-3 gap-4 mt-16 bg-[#000] -index">
                             {
                                 team.map(data=>(
                                     <>
                                         <div className="flex flex-col">
-                                            <img src={data.img} />
+                                            <img src={data.img} className="w-[310px] h-[320px]" />
                                             <div className="flex justify-between items-center my-3">
                                                 <div className="flex flex-col">
                                                     <p className="text-sm font-sans2 text-[#fff]">{data.name}</p>

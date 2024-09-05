@@ -18,6 +18,10 @@ import play from "./assets/play.png";
 import nft from "./assets/nft.png";
 import ude from "./assets/ude.png";
 import chi from "./assets/chi.png";
+import bello from "./assets/bello.jpg";
+import Joshua from "./assets/Joshua.png";
+import dan from "./assets/dan.png";
+import chuks from "./assets/chuks.png";
 export {
     opulon,
     output,
@@ -37,5 +41,9 @@ export {
     play,
     nft,
     ude,
-    chi
+    chi,
+    bello,
+    Joshua,
+    dan,
+    chuks
 }
