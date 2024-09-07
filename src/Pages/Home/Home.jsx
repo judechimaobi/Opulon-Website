@@ -92,19 +92,19 @@ const Home = ()=>{
                 </div>
                 {/* banner ends */}
                 {/* what is opulon start */}
-                <div className="flex justify-between my-16 px-20">
-                    <div className="flex w-1/2">
+                <div className="flex justify-between sm:flex-col my-16 px-20 sm:px-5">
+                    <div className="flex w-1/2 sm:w-full">
                         <img src={images.Frame55} />
                         <div className="flex items-center flex-col ml-5">
                             <img src={images.Frame56} />
                             <img className="mt-5" src={images.Frame57} />
                         </div>
                     </div>
-                    <div className="flex flex-col w-1/2">
+                    <div className="flex flex-col w-1/2 sm:mt-5">
                         <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                             What is Opulon?
                         </p>
-                        <p className="text-base font-sans2 text-[#fff] w-[600px] mt-2 mb-9">
+                        <p className="text-base font-sans2 text-[#fff] w-[600px] sm:w-[361px] mt-2 mb-9">
                             Opulon is a virtual crypto world built on the Solana blockchain, designed to 
                             bring blockchain activities like trading, gaming, and social interaction into 
                             a unified and immersive environment.
@@ -113,14 +113,14 @@ const Home = ()=>{
                             <p className="mb-4 font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                                 Key Benefits
                             </p>
-                            <div className="flex font-sans2 text-[#fff]">
-                                <p className="flex justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                            <div className="flex sm:flex-col font-sans2 text-[#fff]">
+                                <p className="flex sm:w-[361px] justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Seamless integration of blockchain activities
                                 </p>
-                                <p className="flex justify-center mx-5 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <p className="flex sm:w-[361px] justify-center mx-5 sm:mx-0 sm:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Immersive, interactive virtual world
                                 </p>
-                                <p className="flex justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <p className="flex sm:w-[361px] justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Secure and fast transactions with Solana
                                 </p>
                             </div>
