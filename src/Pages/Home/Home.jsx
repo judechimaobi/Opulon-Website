@@ -69,21 +69,21 @@ const Home = ()=>{
         <>
             <div className="flex flex-col">
                 {/* banner start */}
-                <div className="flex items-center justify-between px-20 sm:px-5 sm:w-fit">
-                    <div className="flex flex-col">
+                <div className="flex items-center justify-between px-20 sm:px-3 sm:w-fit sm:w-full">
+                    <div className="flex flex-col sm:w-full">
                         <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#702A90] w-[650px] sm:w-[300px] font-normal text-5xl sm:text-lg">
                             Welcome to Opulon:
                             An Immersive Virtual
                             World Built on Solana
                         </p>
-                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px] sm:w-[300px]">
+                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px]">
                             Trade, Play, and Connect in a Seamless Crypto Ecosystem
                         </p>
-                        <div className="flex font-sans2 text-[#fff] w-[500px] items-center">
-                            <p className="flex justify-center  font-sans2 bg-[#670D65] rounded-full p-5">
+                        <div className="flex font-sans2 text-[#fff] sm:text-sm w-[500px] sm:w-fit items-center ">
+                            <p className="flex justify-center sm: font-sans2 bg-[#670D65] rounded-full p-5 sm:p-3" >
                                 Join the Adventure
                             </p>
-                            <p className="flex ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
+                            <p className="flex sm:items-center ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
                         </div>
                     </div>
                     <div className="bg-[url('/src/assets/output.png')] w-[500px] h-[703px] bg-center bg-cover sm:hidden">
