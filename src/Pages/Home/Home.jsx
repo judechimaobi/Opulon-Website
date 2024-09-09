@@ -70,23 +70,23 @@ const Home = ()=>{
             <div className="flex flex-col">
                 {/* banner start */}
                 <div className="flex items-center justify-between px-20 sm:px-3 sm:w-fit sm:w-full">
-                    <div className="flex flex-col sm:w-full">
-                        <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#702A90] w-[650px] sm:w-[300px] font-normal text-5xl sm:text-lg">
+                    <div className="flex flex-col sm:w-full w-1/2">
+                        <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#702A90] w-[650px] md:w-fit sm:w-[300px] font-normal text-5xl md:text-3xl sm:text-lg">
                             Welcome to Opulon:
                             An Immersive Virtual
                             World Built on Solana
                         </p>
-                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px]">
+                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px] sm:w-fit md:w-fit">
                             Trade, Play, and Connect in a Seamless Crypto Ecosystem
                         </p>
-                        <div className="flex font-sans2 text-[#fff] sm:text-sm w-[500px] sm:w-fit items-center ">
+                        <div className="flex md:flex-col font-sans2 text-[#fff] sm:text-sm w-[500px] sm:w-fit md:w-full items-center ">
                             <p className="flex justify-center sm: font-sans2 bg-[#670D65] rounded-full p-5 sm:p-3" >
                                 Join the Adventure
                             </p>
-                            <p className="flex sm:items-center ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
+                            <p className="flex sm:items-center md:mt-3 ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
                         </div>
                     </div>
-                    <div className="bg-[url('/src/assets/output.png')] w-[500px] h-[703px] bg-center bg-cover sm:hidden">
+                    <div className="w-1/2 bg-[url('/src/assets/output.png')] w-[500px] h-[703px] md:h-[500px] bg-center bg-cover sm:hidden md:block">
                         
                     </div>
                 </div>
@@ -100,24 +100,24 @@ const Home = ()=>{
                             <img className="mt-5" src={images.Frame57} />
                         </div>
                     </div>
-                    <div className="flex flex-col w-1/2 sm:mt-5">
+                    <div className="flex flex-col w-1/2 sm:mt-5 md:pl-4">
                         <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                             What is Opulon?
                         </p>
-                        <p className="text-base font-sans2 text-[#fff] w-[600px] sm:w-[361px] mt-2 mb-9">
+                        <p className="text-base font-sans2 text-[#fff] w-[600px] sm:w-[361px] md:w-full mt-2 mb-9">
                             Opulon is a virtual crypto world built on the Solana blockchain, designed to 
                             bring blockchain activities like trading, gaming, and social interaction into 
                             a unified and immersive environment.
                         </p>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col md:w-full">
                             <p className="mb-4 font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                                 Key Benefits
                             </p>
-                            <div className="flex sm:flex-col font-sans2 text-[#fff]">
+                            <div className="flex sm:flex-col md:flex-wrap font-sans2 text-[#fff]">
                                 <p className="flex sm:w-[361px] justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Seamless integration of blockchain activities
                                 </p>
-                                <p className="flex sm:w-[361px] justify-center mx-5 sm:mx-0 sm:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <p className="flex sm:w-[361px] justify-center mx-5 sm:mx-0 sm:my-3 md:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Immersive, interactive virtual world
                                 </p>
                                 <p className="flex sm:w-[361px] justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
@@ -130,7 +130,7 @@ const Home = ()=>{
                 {/* what is opulon ends */}
                 {/* why solana start */}
                 <div className="flex items-center justify-center bg-[url('/src/assets/Vector1.png')] sm:bg-[url('/src/assets/Vector2.png')]  h-[584px] sm:h-full sm:w-full bg-center bg-contain sm:bg-cover bg-no-repeat">
-                    <div className="flex sm:flex-col justify-between items-center w-3/4">
+                    <div className="flex sm:flex-col justify-between items-center w-3/4 md:w-fit">
                         <div className="flex flex-col sm:w-full">
                             <p className="text-xl font-sans1 text-[#fff]">Why Solana blockchain?</p>
                             <p className="text-lg text-[#FB4C00] my-5">Optimal Performance</p>
@@ -156,7 +156,7 @@ const Home = ()=>{
                         {
                             features.map((data, i)=>(
                                 <>
-                                    <div className={ (i === 1 || i === 4) ? "mx-20 sm:mx-0 mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]" : " mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
+                                    <div className={ (i === 1 || i === 4) ? "mx-20 sm:mx-0 md:mx-0 mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]" : " mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
                                         <img src={data.img} className="w-[24px] h-[24px]" />
                                         <p className="text-base my-7">{data.title}</p>
                                         <p className="text-sm">
@@ -178,11 +178,11 @@ const Home = ()=>{
                             <p className="text-sm sm:text-xl text-[#fff]">You can create, own and customize your avatars, homes, and other virtual assets.</p>
                         </div>
                         <img src={images.Frame46} className="sm:hidden" />
-                        <img src={images.Frame461} className="sm:block" />
+                        <img src={images.Frame461} className="sm:block md:hidden" />
                         <img src={images.Frame47} className="mx-6 sm:hidden" />
-                        <img src={images.Frame471} className="sm:block my-6" />
+                        <img src={images.Frame471} className="sm:block my-6 md:hidden" />
                         <img src={images.Frame48} className="sm:hidden"/>
-                        <img src={images.Frame481} className="sm:block" />
+                        <img src={images.Frame481} className="sm:block md:hidden" />
                     </div>
                 </div>
                 {/* create end */}
@@ -190,19 +190,19 @@ const Home = ()=>{
                 <div className="bg-[url('/src/assets/works.png')] sm:bg-[url('/src/assets/Frame.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain sm:bg-contain sm:px-2"></div>
                 {/* how it works end */}
                 {/* case start */}
-                <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover">
+                <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full md:w-fit h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover">
                     <p className="w-[200px] h-[40px] font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] font-normal text-2xl">
                         Use Cases
                     </p>
                    <div className="flex sm:flex-col justify-between">
-                        <div className="flex justify-between items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px]  h-[150px] rounded-md">
+                        <div className="flex justify-between items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px] rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">Community Building</p>
                                 <p className="font-sans2 text-[#242424] text-xs">Host meetings, events, and more in a virtual space where every user is real.</p>
                             </div>
                             <img src={images.community} className="h-full" />
                         </div>
-                        <div className="flex justify-between ml-3 sm:ml-0 sm:mt-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] h-[150px] rounded-md">
+                        <div className="flex justify-between ml-3 sm:ml-0 sm:mt-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit h-[150px] rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">Play-to-Earn Games</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
@@ -213,7 +213,7 @@ const Home = ()=>{
                         </div>
                     </div>
                     <div className="flex sm:flex-col justify-between mt-3">    
-                        <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px]  h-[150px] rounded-md">
+                        <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit  h-[150px] rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">Crypto Real Estate</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
@@ -222,7 +222,7 @@ const Home = ()=>{
                             </div>
                             <img src={images.crypto} className="h-full" />
                         </div>
-                        <div className="flex justify-between items-end ml-3 sm:ml-0 sm:mt-3  bg-gradient-to-r from-[#0073FF] to-transparent w-[500px] sm:w-[361px] h-[150px] rounded-md">
+                        <div className="flex justify-between items-end ml-3 sm:ml-0 sm:mt-3  bg-gradient-to-r from-[#0073FF] to-transparent w-[500px] sm:w-[361px] h-[150px] md:w-fit rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">NFT Marketplace</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
