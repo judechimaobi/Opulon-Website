@@ -16,7 +16,7 @@ const Header = ()=>{
                     <p>White paper</p>
                     <p className="flex justify-center font-sans2   ml-10 rounded-full border-2 border-[#702A90] p-5">Join the Adventure</p>
                 </div>
-                <div className="hidden sm:flex text-[#fff] text-2xl cursor-pointer">
+                <div className="hidden sm:flex md:flex text-[#fff] text-2xl cursor-pointer">
                     {
                         nav ? <p onClick={handleNav}><FaTimes /></p> :  <p onClick={handleNav}><GiHamburgerMenu /></p>
                     }

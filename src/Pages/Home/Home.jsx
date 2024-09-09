@@ -187,7 +187,7 @@ const Home = ()=>{
                 </div>
                 {/* create end */}
                 {/* how it works start */}
-                <div className="bg-[url('/src/assets/works.png')] sm:bg-[url('/src/assets/Frame.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain sm:bg-contain"></div>
+                <div className="bg-[url('/src/assets/works.png')] sm:bg-[url('/src/assets/Frame.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain sm:bg-contain sm:px-2"></div>
                 {/* how it works end */}
                 {/* case start */}
                 <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover">
