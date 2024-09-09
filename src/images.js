@@ -9,9 +9,11 @@ import hugeicons from "./assets/hugeicons.png";
 import mdi_security from "./assets/mdi_security.png";
 import simpleicons from "./assets/simple-icons.png";
 import Frame46 from "./assets/Frame46.png";
+import Frame461 from "./assets/Frame461.png";
 import Frame47 from "./assets/Frame47.png";
+import Frame471 from "./assets/Frame471.png";
 import Frame48 from "./assets/Frame48.png";
-
+import Frame481 from "./assets/Frame481.png";
 import community from "./assets/community.png";
 import crypto from "./assets/crypto.png";
 import play from "./assets/play.png";
@@ -34,8 +36,11 @@ export {
     mdi_security,
     simpleicons,
     Frame46,
+    Frame461,
     Frame47,
+    Frame471,
     Frame48,
+    Frame481,
     community,
     crypto,
     play,
