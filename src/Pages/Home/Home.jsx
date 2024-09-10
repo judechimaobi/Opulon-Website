@@ -8,32 +8,44 @@ const team = [
     {
         img: images.ude,
         name: "Jude Chimaobi",
-        position: "Project Founder"
+        position: "Project Founder",
+        linkedin: "https://linkedin.com/in/bellohadi",
+        twitter: "https://twitter.com/alliendeveloper"
     },  
     {
         img: images.chi,
         name: "Chineye",
-        position: "Product/project manager"
+        position: "Product/project manager",
+        linkedin: "https://www.linkedin.com/in/chinenye-ibegbunam",
+        twitter: "https://x.com/chinenyeibeh_?t=pNhC5gS40kPVVIl9GXvptA&s=09"
     }, 
     {
         img: images.bello,
         name: "Bello",
-        position: "Web Dev"
+        position: "Web Dev",
+        linkedin: "https://linkedin.com/in/bellohadi",
+        twitter: "https://twitter.com/alliendeveloper"
     }, 
     {
         img: images.Joshua,
         name: "Joshua",
-        position: "Solana Dev"
+        position: "Solana Dev",
+        linkedin: "https://linkedin.com/in/bellohadi",
+        twitter: "https://twitter.com/alliendeveloper"
     }, 
     {
         img: images.dan,
         name: "Dan",
-        position: "Social Media Manager"
+        position: "Social Media Manager",
+        linkedin: "https://linkedin.com/in/bellohadi",
+        twitter: "https://twitter.com/alliendeveloper"
     }, 
     {
         img: images.chuks,
         name: "Chuks",
-        position: "UI/UX Designer"
+        position: "UI/UX Designer",
+        linkedin: "https://linkedin.com/in/bellohadi",
+        twitter: "https://twitter.com/alliendeveloper"
     },   
     
 ]
@@ -259,8 +271,8 @@ const Home = ()=>{
                                                     <p className="text-xs text-[#FB4C00] font-sans2">{data.position}</p>
                                                 </div>
                                                 <div className="flex">
-                                                    <p className="text-[#fff] text-2xl"><FaXTwitter /></p>
-                                                    <p className="text-[#fff] text-2xl ml-3"><FaLinkedin /></p>
+                                                    <a href={data.twitter} className="text-[#fff] text-2xl no-underline"><FaXTwitter /></a>
+                                                    <a href={data.linkedin} className="text-[#fff] text-2xl ml-3 no-underline"><FaLinkedin /></a>
                                                 </div>
                                             </div>
                                         </div>
