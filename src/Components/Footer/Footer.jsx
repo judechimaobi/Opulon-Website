@@ -7,7 +7,7 @@ const Footer = ()=>{
         <>
             <div className="flex flex-col justify-between w-full h-auto py-10 font-sans2">
                 <div className="flex sm:flex-col sm:items-center px-20 sm:px-10 bg-[#09090B] justify-between items-center w-full">
-                    <div className="flex flex-col font text-[#fff] sm:w-fit text-xl font-normal">
+                    <div className="flex flex-col font text-[#fff] sm:text-center sm:w-fit text-xl font-normal">
                         <p>
                             Join our social media
                         </p>
@@ -16,11 +16,11 @@ const Footer = ()=>{
                         </span>
                     </div>
                     <div className="flex flex-col text-[#fff] sm:w-full">
-                        <div className="flex flex-col">
-                            <p className="text-right">
+                        <div className="flex flex-col sm:mt-3">
+                            <p className="text-right sm:text-center">
                                 Stay updated with the latest 
                             </p><br />
-                            <p  className="text-right">from Opulon</p>
+                            <p  className="text-right sm:text-center sm:mt-[-3]">from Opulon</p>
                         </div>
                         <div className="flex sm:flex-col my-5">
                             <input
@@ -35,7 +35,7 @@ const Footer = ()=>{
                         </div>
                     </div>
                 </div>
-                <div className="flex sm:flex-col items-center justify-between px-20 font-normal">
+                <div className="flex sm:flex-col items-center justify-between px-20 font-normal sm:text-center">
                     <p className="text-[#555555]">&copy; 2024 Opulon. All Right Reserved</p>
                     <div className="flex sm:mt-2">
                         <div className="flex items-center justify-center border-2 border-[#555555] rounded-md w-[52px] h-[52px]">
