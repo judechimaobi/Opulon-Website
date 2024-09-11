@@ -44,8 +44,8 @@ const team = [
         img: images.chuks,
         name: "Chuks",
         position: "UI/UX Designer",
-        linkedin: "https://linkedin.com/in/bellohadi",
-        twitter: "https://twitter.com/alliendeveloper"
+        linkedin: "https://www.linkedin.com/in/eze-chukwuemeka-ebubechukwu/",
+        twitter: "https://x.com/iam_chuksE"
     },   
     
 ]
