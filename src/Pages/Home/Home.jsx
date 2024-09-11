@@ -76,6 +76,23 @@ const features = [
         description: "Built on Solana, Opulon ensures your transactions are fast, secure, and cost-effective."
     },
 ]
+const How = [
+    {
+        id: "01",
+        work: "Onboarding",
+        description: "Connect your Solana wallet to start your journey in Opulon. Your wallet address becomes your identity in this new world."
+    },
+    {
+        id: "02",
+        work: "Explore & Interact",
+        description: "Navigate through various zones dedicated to different activities—trade NFTs, participate in gaming quests, or socialize with others."
+    },
+    {
+        id: "03",
+        work: "Transaction",
+        description: "Execute transactions seamlessly with minimal fees and enjoy high-speed performance."
+    },
+]
 const Home = ()=>{
     return(
         <>
@@ -141,7 +158,7 @@ const Home = ()=>{
                 </div>
                 {/* what is opulon ends */}
                 {/* why solana start */}
-                <div className="flex items-center justify-center bg-[url('/src/assets/Vector1.png')] sm:bg-[url('/src/assets/Vector2.png')]  h-[584px] sm:h-full sm:w-full bg-center bg-contain sm:bg-cover bg-no-repeat">
+                <div className="flex items-center justify-center bg-[url('/src/assets/Vector1.png')] sm:bg-[url('/src/assets/Vector2.png')]  h-[584px] sm:h-full sm:w-full bg-center bg-contain sm:bg-cover bg-no-repeat py-10">
                     <div className="flex sm:flex-col justify-between items-center w-3/4 md:w-fit">
                         <div className="flex flex-col sm:w-full">
                             <p className="text-xl font-sans1 text-[#fff]">Why Solana blockchain?</p>
@@ -158,7 +175,7 @@ const Home = ()=>{
                 {/* why solana ends */}
                 {/* features start */}
                 <div className="flex justify-center flex-col px-20 sm:px-5 sm:mt-5">
-                    <p className="flex justify-center w-[124px] text-center text-[#fff] font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                    <p className="flex justify-center w-[124px] text-center text-[#fff] font-sans2 rounded-md border-2 border-[#702A90] p-2">
                         opulon
                     </p>
                     <p className="font-sans1 my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] sm:w-fit font-normal text-2xl">
@@ -170,8 +187,8 @@ const Home = ()=>{
                                 <>
                                     <div className={ (i === 1 || i === 4) ? "mx-20 sm:mx-0 md:mx-0 mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]" : " mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
                                         <img src={data.img} className="w-[24px] h-[24px]" />
-                                        <p className="text-base my-7">{data.title}</p>
-                                        <p className="text-sm">
+                                        <p className="text-base mt-5 mb-2">{data.title}</p>
+                                        <p className="text-sm w-full">
                                             {data.description}
                                         </p>
                                     </div>
@@ -190,7 +207,7 @@ const Home = ()=>{
                             <p className="text-sm sm:text-xl text-[#fff]">You can create, own and customize your avatars, homes, and other virtual assets.</p>
                         </div>
                         <img src={images.Frame46} className="sm:hidden " />
-                        <img src={images.Frame461} className="sm:block md:hidden hidden" />
+                        <img src={images.Frame461} className="sm:block md:hidden hidden pt-5" />
                         <img src={images.Frame47} className="mx-6 sm:hidden" />
                         <img src={images.Frame471} className="sm:block my-6 md:hidden hidden" />
                         <img src={images.Frame48} className="sm:hidden"/>
@@ -199,7 +216,27 @@ const Home = ()=>{
                 </div>
                 {/* create end */}
                 {/* how it works start */}
-                <div className="bg-[url('/src/assets/works.png')] sm:bg-[url('/src/assets/Frame.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain sm:bg-contain sm:px-2"></div>
+                {/* <div className="bg-[url('/src/assets/works.png')] sm:bg-[url('/src/assets/Frame.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain sm:bg-contain sm:px-2"></div> */}
+                <div className="flex justify-center flex-col px-20 sm:px-5 sm:mt-5 my-10">
+                    <p className="font-sans1 my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] sm:w-fit font-normal text-2xl">
+                        How It Works
+                    </p>
+                    {
+                        How.map(data=>(
+                            <>
+                                <div className="flex flex-col my-5">
+                                    <div className="flex font-sans1">
+                                        <p className="text-[#515151] text-lg">{data.id}</p>
+                                        <p className="text-[#E99A4E] text-lg ml-2">{data.work}</p>
+                                    </div>
+                                    <p className="font-sans2 text-sm text-[#fff]">
+                                        {data.description}
+                                    </p>
+                                </div>
+                            </>
+                        ))
+                    }
+                </div>
                 {/* how it works end */}
                 {/* case start */}
                 <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full md:w-fit h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover">
