@@ -93,6 +93,33 @@ const How = [
         description: "Execute transactions seamlessly with minimal fees and enjoy high-speed performance."
     },
 ]
+const Faq = [
+    {
+        title: "What is Opulon?",
+        description: "Opulon is an immersive virtual world built on the Solana blockchain. It's a platform where users can engage in various blockchain activities, from trading and staking to gaming and social interaction."
+    },
+    {
+        title: "How do I access Opulon?",
+        description: "You can access Opulon by connecting your Solana wallet to the platform."
+    },
+    {
+        title: "Is there a cost to use Opulon?",
+        description: "While there may be transaction fees associated with certain activities, Opulon itself is free to use."
+    },
+    {
+        title: "Can I earn real money in Opulon?",
+        description: "Yes, Opulon offers various opportunities for users to earn points that can be converted to real cryptocurrency, through quests and community activities."
+    },
+    {
+        title: "How does Opulon handle security and scalability?",
+        description: "Opulon leverages the scalability & security of the Solana blockchain to ensure a smooth user experience and safety of user data and transactions, even as the platform grows."
+    },
+    {
+        title: "How does Opulon reward users' participation on the platform?",
+        description: "Opulon doesn't have a live token at the moment for incentivizing users. Participation is rewarded with OP points which can later be converted to real cryptocurrency based on the terms of completed quests."
+    },
+
+]
 const Home = ()=>{
     return(
         <>
@@ -216,8 +243,8 @@ const Home = ()=>{
                 </div>
                 {/* create end */}
                 {/* how it works start */}
-                {/* <div className="bg-[url('/src/assets/works.png')] sm:bg-[url('/src/assets/Frame.png')] w-full h-[915px] bg-no-repeat bg-center bg-contain sm:bg-contain sm:px-2"></div> */}
-                <div className="flex justify-center flex-col px-20 sm:px-5 sm:mt-5 my-10">
+                <div className="bg-[url('/src/assets/works.png')]  w-full h-[915px] bg-no-repeat bg-center bg-contain sm:hidden"></div>
+                <div className="sm:flex justify-center flex-col px-20 sm:px-5 sm:mt-5 my-10 hidden">
                     <p className="font-sans1 my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] sm:w-fit font-normal text-2xl">
                         How It Works
                     </p>
@@ -239,19 +266,19 @@ const Home = ()=>{
                 </div>
                 {/* how it works end */}
                 {/* case start */}
-                <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full md:w-fit h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover">
+                <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full md:w-fit h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover py-10">
                     <p className="w-[200px] h-[40px] font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] font-normal text-2xl">
                         Use Cases
                     </p>
                    <div className="flex sm:flex-col justify-between">
-                        <div className="flex justify-between items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px] rounded-md">
+                        <div className="flex justify-between items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">Community Building</p>
                                 <p className="font-sans2 text-[#242424] text-xs">Host meetings, events, and more in a virtual space where every user is real.</p>
                             </div>
                             <img src={images.community} className="h-full" />
                         </div>
-                        <div className="flex justify-between ml-3 sm:ml-0 sm:mt-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit h-[150px] rounded-md">
+                        <div className="flex justify-between ml-3 sm:ml-0 sm:mt-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit h-[150px]  rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">Play-to-Earn Games</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
@@ -262,7 +289,7 @@ const Home = ()=>{
                         </div>
                     </div>
                     <div className="flex sm:flex-col justify-between mt-3">    
-                        <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit  h-[150px] rounded-md">
+                        <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
                                 <p className="font-sans1 text-sm">Crypto Real Estate</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
@@ -271,14 +298,14 @@ const Home = ()=>{
                             </div>
                             <img src={images.crypto} className="h-full" />
                         </div>
-                        <div className="flex justify-between items-end ml-3 sm:ml-0 sm:mt-3  bg-gradient-to-r from-[#0073FF] to-transparent w-[500px] sm:w-[361px] h-[150px] md:w-fit rounded-md">
-                            <div className="flex flex-col w-[243px] p-4">
+                        <div className="flex justify-between items-end ml-3 sm:ml-0 sm:mt-3  bg-gradient-to-r from-[#0073FF] to-transparent w-[500px] sm:w-[361px] h-[150px] sm:h-auto md:w-fit rounded-md">
+                            <div className="flex flex-col w-[243px] sm:w-[177px] p-4 ">
                                 <p className="font-sans1 text-sm">NFT Marketplace</p>
-                                <p className="font-sans2 text-[#242424] text-xs">
+                                <p className="font-sans2 text-[#242424]  text-xs">
                                     Trade unique avatars, accessories, and other digital assets within our NFT marketplace.
                                 </p>
                             </div>
-                            <img src={images.nft} className="h-full" />
+                            <img src={images.nft} className="h-full sm:w-full sm:h-full" />
                         </div>
                         
                     </div> 
@@ -301,7 +328,7 @@ const Home = ()=>{
                                 team.map(data=>(
                                     <>
                                         <div className="flex flex-col">
-                                            <img src={data.img} className="w-[310px] h-[320px]" />
+                                            <img src={data.img} className="w-[310px] h-[320px] rounded-md" />
                                             <div className="flex justify-between items-center my-3">
                                                 <div className="flex flex-col">
                                                     <p className="text-sm font-sans2 text-[#fff]">{data.name}</p>
@@ -320,7 +347,29 @@ const Home = ()=>{
                     </div>
                 </div>
                 {/* team end */}
-
+                {/* faq start */}
+                <div className="flex flex-col justify-center w-full h-full items-center px-20 sm:px-5 sm:mt-5 my-10">
+                    <p className="font-sans1 my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] sm:w-fit font-normal text-2xl">
+                        Frequently Asked Questions
+                    </p>
+                    <div className="grid grid-cols-2 sm:grid-cols-1 my-5">
+                        {
+                            Faq.map(data=>(
+                                <>
+                                    
+                                        <div className="flex flex-col font-sans1 mb-5">
+                                            <p className="text-[#E99A4E] text-lg">{data.title}</p>
+                                            <p className="font-sans2 text-sm text-[#fff]">
+                                                {data.description}
+                                            </p>
+                                        </div>
+                                    
+                                </>
+                            ))
+                        }
+                    </div>
+                </div>
+                {/* faq ends */}
             </div>
         </>
     )
