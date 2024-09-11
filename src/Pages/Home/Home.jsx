@@ -189,12 +189,12 @@ const Home = ()=>{
                             <p className="text-xl font-sans1 text-[#fff]">Create, Customize and Own</p>
                             <p className="text-sm sm:text-xl text-[#fff]">You can create, own and customize your avatars, homes, and other virtual assets.</p>
                         </div>
-                        <img src={images.Frame46} className="sm:hidden" />
-                        <img src={images.Frame461} className="sm:block md:hidden" />
+                        <img src={images.Frame46} className="sm:hidden " />
+                        <img src={images.Frame461} className="sm:block md:hidden hidden" />
                         <img src={images.Frame47} className="mx-6 sm:hidden" />
-                        <img src={images.Frame471} className="sm:block my-6 md:hidden" />
+                        <img src={images.Frame471} className="sm:block my-6 md:hidden hidden" />
                         <img src={images.Frame48} className="sm:hidden"/>
-                        <img src={images.Frame481} className="sm:block md:hidden" />
+                        <img src={images.Frame481} className="sm:block md:hidden hidden" />
                     </div>
                 </div>
                 {/* create end */}
