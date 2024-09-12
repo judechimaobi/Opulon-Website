@@ -136,7 +136,7 @@ const Home = ()=>{
                             Trade, Play, and Connect in a Seamless Crypto Ecosystem
                         </p>
                         <div className="flex md:flex-col font-sans2 text-[#fff] sm:text-sm w-[500px] sm:w-fit md:w-full items-center ">
-                            <p className="flex justify-center sm: font-sans2 bg-[#670D65] rounded-full p-5 sm:p-3" >
+                            <p className="flex justify-center sm: font-sans2 bg-gradient-to-r from-[#EA00E3] to-[#E99A4E] rounded-full p-5 sm:p-3" >
                                 Join the Adventure
                             </p>
                             <p className="flex sm:items-center md:mt-3 ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
@@ -189,7 +189,7 @@ const Home = ()=>{
                     <div className="flex sm:flex-col justify-between items-center w-3/4 md:w-fit">
                         <div className="flex flex-col sm:w-full">
                             <p className="text-xl font-sans1 text-[#fff]">Why Solana blockchain?</p>
-                            <p className="text-lg text-[#FB4C00] mt-4 mb-2">Optimal Performance</p>
+                            <p className="text-lg text-[#E99A4E] mt-4 mb-2">Optimal Performance</p>
                             <p className="text-sm text-[#fff] w-[392px] sm:w-full sm:mb-5">
                                 Solana's lightning-fast transaction times (400ms) and high throughput (65,000 TPS) 
                                 enable a seamless user experience, making it ideal for a demanding application like 
@@ -212,10 +212,10 @@ const Home = ()=>{
                         {
                             features.map((data, i)=>(
                                 <>
-                                    <div className={ (i === 1 || i === 4) ? "mx-20 sm:mx-0 md:mx-0 mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]" : " mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
+                                    <div className={ (i === 1 || i === 4) ? "mx-20 sm:mx-0 md:mx-0 mb-5 flex flex-col  font-sans1 w-[300px]" : " mb-5 flex flex-col text-[#fff] font-sans1 w-[300px]"}>
                                         <img src={data.img} className="w-[24px] h-[24px]" />
-                                        <p className="text-base mt-5 mb-2">{data.title}</p>
-                                        <p className="text-sm w-full">
+                                        <p className="text-base mt-5 mb-2 text-[#E99A4E] ">{data.title}</p>
+                                        <p className="text-sm w-full text-[#fff]">
                                             {data.description}
                                         </p>
                                     </div>
@@ -271,41 +271,41 @@ const Home = ()=>{
                         Use Cases
                     </p>
                    <div className="flex sm:flex-col justify-between">
-                        <div className="flex items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
-                            <div className="flex flex-col w-[243px] p-4 border-2 border-red-500">
+                        <div className="flex justify-between items-end bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
+                            <div className="flex flex-col w-1/2 p-4">
                                 <p className="font-sans1 text-sm">Community Building</p>
                                 <p className="font-sans2 text-[#242424] text-xs">Host meetings, events, and more in a virtual space where every user is real.</p>
                             </div>
-                            <img src={images.community} className="h-full border-2 border-red-500 sm:w-[200px]" />
+                            <img src={images.community} className="h-full border-5 border-green-500 w-1/2" />
                         </div>
                         <div className="flex justify-between ml-3 sm:ml-0 sm:mt-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit h-[150px]  rounded-md">
-                            <div className="flex flex-col w-[243px] p-4">
+                            <div className="flex flex-col w-1/2 p-4">
                                 <p className="font-sans1 text-sm">Play-to-Earn Games</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
                                     Participate in competitive quests where you can earn SOL and other rewards.
                                 </p>
                             </div>
-                            <img src={images.play} className="h-full" />
+                            <img src={images.play} className="h-full w-1/2" />
                         </div>
                     </div>
                     <div className="flex sm:flex-col justify-between mt-3">    
                         <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
-                            <div className="flex flex-col w-[243px] p-4">
+                            <div className="flex flex-col w-1/2 p-4">
                                 <p className="font-sans1 text-sm">Crypto Real Estate</p>
                                 <p className="font-sans2 text-[#242424] text-xs">
                                     Buy and sell virtual properties within Opulon—buildings, meeting rooms, and more.
                                 </p>
                             </div>
-                            <img src={images.crypto} className="h-full" />
+                            <img src={images.crypto} className="h-full w-1/2" />
                         </div>
                         <div className="flex justify-between items-end ml-3 sm:ml-0 sm:mt-3  bg-gradient-to-r from-[#0073FF] to-transparent w-[500px] sm:w-[361px] h-[150px] sm:h-auto md:w-fit rounded-md">
-                            <div className="flex flex-col w-[243px] sm:w-[177px] p-4 ">
+                            <div className="flex flex-col w-1/2 sm:w-[177px] p-4 ">
                                 <p className="font-sans1 text-sm">NFT Marketplace</p>
                                 <p className="font-sans2 text-[#242424]  text-xs">
                                     Trade unique avatars, accessories, and other digital assets within our NFT marketplace.
                                 </p>
                             </div>
-                            <img src={images.nft} className="h-full sm:w-full sm:h-full" />
+                            <img src={images.nft} className="h-full w-1/2" />
                         </div>
                         
                     </div> 
@@ -328,7 +328,7 @@ const Home = ()=>{
                                 team.map(data=>(
                                     <>
                                         <div className="flex flex-col">
-                                            <img src={data.img} className="w-[310px] h-[320px] rounded-md" />
+                                            <img src={data.img} className="w-[310px] h-[320px] rounded-lg" />
                                             <div className="flex justify-between items-center my-3">
                                                 <div className="flex flex-col">
                                                     <p className="text-sm font-sans2 text-[#fff]">{data.name}</p>
