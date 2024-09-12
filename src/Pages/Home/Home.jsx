@@ -1,8 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { IoPlayCircleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import * as images from "../../images";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+
 
 const team = [
     {
@@ -136,9 +139,12 @@ const Home = ()=>{
                             Trade, Play, and Connect in a Seamless Crypto Ecosystem
                         </p>
                         <div className="flex md:flex-col font-sans2 text-[#fff] sm:text-sm w-[500px] sm:w-fit md:w-full items-center ">
-                            <p className="flex justify-center sm: font-sans2 bg-gradient-to-r from-[#EA00E3] to-[#E99A4E] rounded-full p-5 sm:p-3" >
-                                Join the Adventure
-                            </p>
+                            <motion.p whileHover={{ y: -10 }} whileTap={{ scale: 1.1 }} className="cursor-pointer">
+                                <Link to="/" className="flex justify-center h-full font-sans2 bg-gradient-to-r from-[#EA00E3] to-[#E99A4E] rounded-full p-5 sm:p-3" >
+                                    Join the Adventure
+                                </Link>
+                            </motion.p>
+                            
                             <p className="flex sm:items-center md:mt-3 ml-3"><IoPlayCircleOutline />&nbsp;see Demo</p>
                         </div>
                     </div>
@@ -170,15 +176,15 @@ const Home = ()=>{
                                 Key Benefits
                             </p>
                             <div className="flex sm:flex-col md:flex-wrap font-sans2 text-[#fff]">
-                                <p className="flex sm:w-fit justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <motion.p w  className="flex sm:w-fit justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Seamless integration of blockchain activities
-                                </p>
-                                <p className="flex sm:w-fit justify-center mx-5 sm:mx-0 sm:my-3 md:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                </motion.p>
+                                <motion.p w   className="flex sm:w-fit justify-center mx-5 sm:mx-0 sm:my-3 md:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Immersive, interactive virtual world
-                                </p>
-                                <p className="flex sm:w-fit justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                </motion.p>
+                                <motion.p w   className="flex sm:w-fit justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Secure and fast transactions with Solana
-                                </p>
+                                </motion.p>
                             </div>
                         </div>
                     </div>
@@ -327,7 +333,7 @@ const Home = ()=>{
                             {
                                 team.map(data=>(
                                     <>
-                                        <div className="flex flex-col">
+                                        <motion.div whileHover={{ y: -20 }} className="flex flex-col cursor-pointer">
                                             <img src={data.img} className="w-[310px] h-[320px] rounded-lg" />
                                             <div className="flex justify-between items-center my-3">
                                                 <div className="flex flex-col">
@@ -339,7 +345,7 @@ const Home = ()=>{
                                                     <a href={data.linkedin} className="text-[#fff] text-2xl ml-3 no-underline"><FaLinkedin /></a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </motion.div>
                                     </>
                                 ))
                             }
