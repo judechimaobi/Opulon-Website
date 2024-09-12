@@ -16,13 +16,18 @@ const Footer = ()=>{
                         </span>
                     </div>
                     <div className="flex flex-col text-[#fff] sm:w-full">
-                        <div className="flex flex-col sm:mt-3">
+                        <div className="flex flex-col sm:mt-3 sm:hidden">
                             <p className="text-right sm:text-center">
                                 Stay updated with the latest 
                             </p><br />
                             <p  className="text-right sm:text-center sm:mt-[-3]">from Opulon</p>
                         </div>
-                        <div className="flex sm:flex-col my-5">
+                        <div className="hidden sm:flex flex-col sm:mt-3">
+                            <p className="text-right sm:text-center">
+                                Stay updated with the latest from Opulon
+                            </p>
+                        </div>
+                        <div className="flex sm:flex-col sm:justify-center my-5">
                             <input
                                 type="text" 
                                 placeholder="enter email address" 
