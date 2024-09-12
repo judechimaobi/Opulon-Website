@@ -156,27 +156,27 @@ const Home = ()=>{
                             <img className="mt-5" src={images.Frame57} />
                         </div>
                     </div>
-                    <div className="flex flex-col w-1/2 sm:mt-5 md:pl-4">
+                    <div className="flex flex-col w-1/2 sm:w-full sm:mt-5 md:pl-4">
                         <p className="font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                             What is Opulon?
                         </p>
-                        <p className="text-base font-sans2 text-[#fff] w-[600px] sm:w-[361px] md:w-full mt-2 mb-9">
+                        <p className="text-base font-sans2 text-[#fff] w-[600px] sm:w-full md:w-full mt-2 mb-9">
                             Opulon is a virtual crypto world built on the Solana blockchain, designed to 
                             bring blockchain activities like trading, gaming, and social interaction into 
                             a unified and immersive environment.
                         </p>
-                        <div className="flex flex-col md:w-full">
+                        <div className="flex flex-col sm:w-full md:w-full">
                             <p className="mb-4 font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] w-[650px] font-normal text-2xl">
                                 Key Benefits
                             </p>
                             <div className="flex sm:flex-col md:flex-wrap font-sans2 text-[#fff]">
-                                <p className="flex sm:w-[361px] justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <p className="flex sm:w-fit justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Seamless integration of blockchain activities
                                 </p>
-                                <p className="flex sm:w-[361px] justify-center mx-5 sm:mx-0 sm:my-3 md:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <p className="flex sm:w-fit justify-center mx-5 sm:mx-0 sm:my-3 md:my-3 text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Immersive, interactive virtual world
                                 </p>
-                                <p className="flex sm:w-[361px] justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
+                                <p className="flex sm:w-fit justify-center text-center font-sans2 rounded-md border-2 border-[#702A90] p-5">
                                     Secure and fast transactions with Solana
                                 </p>
                             </div>
@@ -189,7 +189,7 @@ const Home = ()=>{
                     <div className="flex sm:flex-col justify-between items-center w-3/4 md:w-fit">
                         <div className="flex flex-col sm:w-full">
                             <p className="text-xl font-sans1 text-[#fff]">Why Solana blockchain?</p>
-                            <p className="text-lg text-[#FB4C00] my-5">Optimal Performance</p>
+                            <p className="text-lg text-[#FB4C00] mt-4 mb-2">Optimal Performance</p>
                             <p className="text-sm text-[#fff] w-[392px] sm:w-full sm:mb-5">
                                 Solana's lightning-fast transaction times (400ms) and high throughput (65,000 TPS) 
                                 enable a seamless user experience, making it ideal for a demanding application like 
@@ -271,12 +271,12 @@ const Home = ()=>{
                         Use Cases
                     </p>
                    <div className="flex sm:flex-col justify-between">
-                        <div className="flex justify-between items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
-                            <div className="flex flex-col w-[243px] p-4">
+                        <div className="flex items-end  bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
+                            <div className="flex flex-col w-[243px] p-4 border-2 border-red-500">
                                 <p className="font-sans1 text-sm">Community Building</p>
                                 <p className="font-sans2 text-[#242424] text-xs">Host meetings, events, and more in a virtual space where every user is real.</p>
                             </div>
-                            <img src={images.community} className="h-full" />
+                            <img src={images.community} className="h-full border-2 border-red-500 sm:w-[200px]" />
                         </div>
                         <div className="flex justify-between ml-3 sm:ml-0 sm:mt-3 items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit h-[150px]  rounded-md">
                             <div className="flex flex-col w-[243px] p-4">
