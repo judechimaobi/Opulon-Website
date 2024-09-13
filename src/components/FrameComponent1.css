@@ -1,0 +1,115 @@
+.an-immersive-virtual,
+.opulon-is-a {
+  align-self: stretch;
+  position: relative;
+}
+.an-immersive-virtual {
+  margin: 0;
+  font-size: inherit;
+  letter-spacing: 0.08em;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: inherit;
+  background: linear-gradient(96.27deg, #2f5bbe, #702a90);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.opulon-is-a {
+  letter-spacing: 0.06em;
+  line-height: 28px;
+}
+.icbaseline-discord-icon,
+.mingcuteyoutube-fill-icon,
+.riinstagram-line-icon,
+.ritwitter-x-fill-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.immersive-world-container,
+.solana-world-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.solana-world-description {
+  align-self: stretch;
+  gap: var(--gap-3xl);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-raleway);
+}
+.immersive-world-container {
+  width: 558px;
+  gap: var(--gap-base);
+  max-width: 100%;
+  z-index: 1;
+}
+.trade-play-and {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.16em;
+  line-height: 31px;
+  z-index: 1;
+}
+.trade-play-and-connect-in-a-wrapper {
+  width: 309px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-33xl) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-raleway);
+}
+.immersive-world-container-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-azonix);
+}
+@media screen and (max-width: 1000px) {
+  .immersive-world-container-parent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .an-immersive-virtual {
+    line-height: 26px;
+    text-align: center;
+  }
+  .opulon-is-a {
+    text-align: center;
+  }
+  .trade-play-and {
+    text-align: center;
+  }
+  .social-icons {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .an-immersive-virtual {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+    text-align: center;
+  }
+}

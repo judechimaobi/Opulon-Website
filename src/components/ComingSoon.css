@@ -1,0 +1,148 @@
+/* Make the content scrollable if it overflows */
+.coming-soon {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #000;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrolling */
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 63px 50px var(--padding-33xl) 59px;
+  gap: 101.6px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* Style the scrollbar */
+.coming-soon::-webkit-scrollbar {
+  width: 12px;
+}
+
+.coming-soon::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+.coming-soon::-webkit-scrollbar-thumb {
+  background-color: #702a90;
+  border-radius: 10px;
+  border: 3px solid #222;
+}
+
+.coming-soon::-webkit-scrollbar-thumb:hover {
+  background-color: #2f5bbe;
+}
+
+/* Adjusting existing classes */
+.person-wearing-futuristic-virt-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: -4px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.logo-05-1-icon,
+.opulon {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-05-1-icon {
+  height: 58px;
+  width: 58px;
+  object-fit: cover;
+}
+
+.opulon {
+  margin: 0;
+  flex: 1;
+  font-size: inherit;
+  letter-spacing: 0.5em;
+  font-weight: 400;
+  font-family: inherit;
+  margin-left: 60px;
+}
+
+.frame-child {
+  height: 73px;
+  width: 305px;
+  position: absolute;
+  margin: 0 !important;
+  top: -23px;
+  left: -32px;
+  filter: blur(50px);
+  border-radius: 50%;
+  background-color: rgba(104, 13, 101, 0.4);
+  z-index: 2;
+}
+
+.opulon-parent {
+  margin: 0 auto;
+  align-self: stretch;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.frame-wrapper {
+  margin-top: -65px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: var(--font-azonix);
+}
+
+.coming-soon,
+.frame-wrapper,
+.logo-05-1-parent {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.logo-05-1-parent {
+  flex-direction: row;
+  padding: 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: var(--font-azonix);
+}
+
+@media screen and (max-width: 975px) {
+  .coming-soon {
+    gap: 51px;
+    padding-left: 29px;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
+  .frame-wrapper {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo-05-1-parent {
+    flex-wrap: wrap;
+  }
+  .coming-soon {
+    gap: 25px;
+  }
+  .opulon {
+    margin-left: 0;
+  }
+}
