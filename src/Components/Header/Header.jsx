@@ -13,7 +13,7 @@ const Header = ()=>{
             <div className="flex justify-between sm:justify-between items-center w-full bg-[#09090B] py-5 px-20 sm:px-10">
                 <img src={images.opulon} alt="logo" />
                 <div className="flex w-auto items-center  text-sm text-[#fff] sm:hidden md:hidden">
-                    <p>White paper</p>
+                    <a className="no-underline" href={images.Opulon} download>White paper</a>
                     <p className="flex justify-center font-sans2   ml-10 rounded-full border-2 border-[#702A90] p-5">Join the Adventure</p>
                 </div>
                 <div className="hidden sm:flex md:flex text-[#fff] text-2xl cursor-pointer">

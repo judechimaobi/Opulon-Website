@@ -24,6 +24,7 @@ import bello from "./assets/bello.jpg";
 import Joshua from "./assets/Joshua.png";
 import dan from "./assets/dan.png";
 import chuks from "./assets/chuks.png";
+import Opulon from "./assets/Opulon.pdf";
 export {
     opulon,
     output,
@@ -50,5 +51,6 @@ export {
     bello,
     Joshua,
     dan,
+    Opulon,
     chuks
 }
