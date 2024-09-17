@@ -135,7 +135,7 @@ const Home = ()=>{
                             An Immersive Virtual
                             World Built on Solana
                         </p>
-                        <p className="mt-3 mb-8 font-sans2 text-[#FB4C00] text-lg w-[550px] sm:w-fit md:w-fit">
+                        <p className="mt-3 mb-8 font-sans2 text-[#E99A4E] text-lg w-[550px] sm:w-fit md:w-fit">
                             Trade, Play, and Connect in a Seamless Crypto Ecosystem
                         </p>
                         <div className="flex md:flex-col font-sans2 text-[#fff] sm:text-sm w-[500px] sm:w-fit md:w-full items-center ">
