@@ -1,11 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useRef } from "react";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import * as images from "../../images";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-
+// import AOS from "aos";
+// import 'aos/dist/aos.css';
+// AOS.init();
 
 const team = [
     {
@@ -124,6 +127,11 @@ const Faq = [
 
 ]
 const Home = ()=>{
+
+    const fadeRef = useRef(null);
+    const slideRef = useRef(null)
+    const isInView = useInView(fadeRef);
+    const isSlideView = useInView(slideRef);
     return(
         <>
             <div className="flex flex-col">
@@ -234,7 +242,12 @@ const Home = ()=>{
                 {/* features ends */}
                 {/* create start */}
                 <div className="flex  w-full h-[400px] sm:h-auto bg-center bg-cover bg-no-repeat bg-[url('/src/assets/create.jpeg')] my-10">
-                    <div className="flex sm:flex-col justify-center items-center w-full h-full bg-gradient-to-r from-[#E99A4E] to-[#E99A4E] sm:py-10 opacity-80">
+                    <motion.div 
+                        ref={fadeRef} 
+                        className="flex sm:flex-col justify-center items-center w-full h-full bg-gradient-to-r from-[#E99A4E] to-[#E99A4E] sm:py-10 opacity-80"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: isInView ? 1 : 0  }}
+                        transition={{ duration: 3.5 }}>
                         <div className="flex flex-col w-[310px] sm:w-full sm:px-3">
                             <p className="text-xl font-sans1 text-[#fff]">Create, Customize and Own</p>
                             <p className="text-sm sm:text-xl text-[#fff]">You can create, own and customize your avatars, homes, and other virtual assets.</p>
@@ -245,7 +258,7 @@ const Home = ()=>{
                         <img src={images.Frame471} className="sm:block my-6 md:hidden hidden" />
                         <img src={images.Frame48} className="sm:hidden"/>
                         <img src={images.Frame481} className="sm:block md:hidden hidden" />
-                    </div>
+                    </motion.div>
                 </div>
                 {/* create end */}
                 {/* how it works start */}
@@ -272,11 +285,15 @@ const Home = ()=>{
                 </div>
                 {/* how it works end */}
                 {/* case start */}
-                <div className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full md:w-fit h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover py-10">
+                <div ref={slideRef} className="flex flex-col justify-center sm:px-5 items-center bg-[url('/src/assets/case.jpeg')] w-full md:w-fit h-[500px] sm:h-auto bg-center bg-no-repeat bg-cover py-10">
                     <p className="w-[200px] h-[40px] font-sans1 text-transparent bg-clip-text bg-gradient-to-r from-[#E99A4E] to-[#FFFFFF] font-normal text-2xl">
                         Use Cases
                     </p>
-                   <div className="flex sm:flex-col justify-between">
+                   <motion.div 
+                        initial={{ x: "-100%", opacity: 0 }}
+                        animate={{ x: isSlideView ? "0%" : "-100%", opacity: isSlideView ?  1 : 0  }}
+                        transition={{ duration: 1.5 }}
+                        className="flex sm:flex-col justify-between">
                         <div className="flex justify-between items-end bg-gradient-to-r from-[#E99A4E] to-[#000] w-[500px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
                             <div className="flex flex-col w-1/2 p-4">
                                 <p className="font-sans1 text-sm">Community Building</p>
@@ -293,8 +310,12 @@ const Home = ()=>{
                             </div>
                             <img src={images.play} className="h-full w-1/2" />
                         </div>
-                    </div>
-                    <div className="flex sm:flex-col justify-between mt-3">    
+                    </motion.div>
+                    <motion.div
+                        initial={{ x: "-100%", opacity: 0 }}
+                        animate={{ x: isSlideView ? "0%" : "-100%", opacity: isSlideView ?  1 : 0  }}
+                        transition={{ duration: 2.5 }}
+                        className="flex sm:flex-col justify-between mt-3">    
                         <div className="flex justify-between  items-end  bg-gradient-to-r from-[#FFFFFF] to-[#999999] w-[400px] sm:w-[361px] md:w-fit  h-[150px]  rounded-md">
                             <div className="flex flex-col w-1/2 p-4">
                                 <p className="font-sans1 text-sm">Crypto Real Estate</p>
@@ -313,8 +334,7 @@ const Home = ()=>{
                             </div>
                             <img src={images.nft} className="h-full w-1/2" />
                         </div>
-                        
-                    </div> 
+                    </motion.div> 
                 </div>
                 {/* case end */}
                 {/* team start */}
