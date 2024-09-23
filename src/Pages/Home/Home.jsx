@@ -12,8 +12,8 @@ const team = [
         img: images.ude,
         name: "Jude Chimaobi",
         position: "Project Founder",
-        linkedin: "https://linkedin.com/in/bellohadi",
-        twitter: "https://twitter.com/alliendeveloper"
+        linkedin: "https://www.linkedin.com/in/judechimaobi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        twitter: "https://x.com/jude_chimaobi?t=6Uco3WxprqankfZc8_8tpA&s=09"
     },  
     {
         img: images.chi,
